@@ -1,0 +1,57 @@
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+  background: url(../img/header-bg.png) no-repeat center top;
+  padding-top: 150px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 650px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 100px;
+  margin-top: 70px;
+}
+#headerwrap h1 {
+  color: #666;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 2px;
+}
+#headerwrap h2 {
+  color: #666;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+#headerwrap p {
+  color: #666;
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 1px;
+}
+#headerwrap .btn {
+  font-weight: 500;
+  font-size: 17px;
+  margin: 20px 0;
+  background-color: rgba(255,255,255,0);
+  color: #555;
+  border: 1px solid #555;
+}
+#headerwrap .btn:hover, #headerwrap .btn:focus {
+  color: #fff;
+  background-color: #555;
+  outline: 0px;
+  border: 1px solid #555;
+}
