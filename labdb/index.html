@@ -10,12 +10,60 @@
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 
 <!-- Custom CSS -->
+<link href="../assets/css/main.css" rel="stylesheet">
 <link href="assets/css/labdb.css" rel="stylesheet">
+
+<link href="../assets/css/main.css" rel="stylesheet">
+<link href="../assets/css/homepage.css" rel="stylesheet">
+<link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+<link href="../assets/css/animate-custom.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+<script src="../assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="../assets/js/modernizr.custom.js"></script>
+
+<!-- JS -->
 <script src="assets/js/list.min.js"></script>
 <script src="../assets/js/jquery.min.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+<div id="navbar-main"> 
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand smoothScroll" href="#home"><span class="icon-sura"></span>SURA</a> </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li> <a href="#home" class="smoothScroll">Home</a></li>
+          <li> <a href="#about" class="smoothScroll">About</a></li>
+          <li> <a href="#initiatives" class="smoothScroll">Initiatives</a></li>
+          <li> <a href="#events" class="smoothScroll">Events</a></li>
+          <li> <a href="#team" class="smoothScroll">Team</a></li>
+          <li> <a href="#sponsors" class="smoothScroll">Sponsors</a></li>
+          <li> <a href="#contact" class="smoothScroll">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Treesearch <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <!-- inelegant Typeform integration -->
+              <li><a class="typeform-share link" href="https://suraboard.typeform.com/to/eUSwsl" data-mode="1" target="_blank">Get Featured</a>
+              </li>
+              <li><a class="typeform-share link" href="https://suraboard.typeform.com/to/WrcjU4" data-mode="1" target="_blank">Post Opportunities</a>
+              </li>
+              <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+            </ul>
+          </li>
+          <li> <a href="https://mailman.stanford.edu/mailman/listinfo/sura_researchers1516" class="btn btn-lg">Join Our Mailing List</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+  </div>
+</div>
+
+
   <div id="labs">
     <input class="search" placeholder="Search" />
     <button class="sort" data-sort="name">
@@ -26,5 +74,12 @@
   
   </div>
   <script src="assets/js/listscript.js"></script>
+  
+  <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="../assets/js/retina.js"></script> 
+<script type="text/javascript" src="../assets/js/jquery.easing.1.3.js"></script> 
+<script type="text/javascript" src="../assets/js/smoothscroll.js"></script> 
+<script type="text/javascript" src="../assets/js/jquery-func.js"></script>
+<script type="text/javascript" src="../assets/js/contact.js"></script>
 </body>
 </html>
