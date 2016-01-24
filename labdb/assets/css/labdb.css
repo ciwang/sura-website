@@ -28,6 +28,11 @@ td {
 .contact {
   font-style: italic;
 }
+#loading_spinner {
+  font-size: 2em;
+  margin-top: 1em;
+  text-align: center;
+}
 
 /********************
  * Search and Options
