@@ -7,24 +7,89 @@
 <title>SURA Labs Database</title>
 
 <!-- Bootstrap core CSS -->
-<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="../assets/css/bootstrap.css" rel="stylesheet">
 
 <!-- Custom CSS -->
+<link href="../assets/css/main.css" rel="stylesheet">
 <link href="assets/css/labdb.css" rel="stylesheet">
 <script src="assets/js/list.min.js"></script>
+<link href="../assets/css/font-awesome.min.css" rel="stylesheet">
+<link href="../assets/css/animate-custom.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 <script src="../assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="../assets/js/modernizr.custom.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+
+	<div id="navbar-main"> 
+	  <!-- Fixed navbar -->
+	  <div class="navbar navbar-default navbar-fixed-top">
+	    <div class="container">
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+	        <a class="navbar-brand smoothScroll" href=".."><span class="icon-sura"></span>SURA Labs DB</a> </div>
+	      <div class="navbar-collapse collapse">
+	        <ul class="nav navbar-nav navbar-right">
+	          <li> <a href=".." class="btn btn-lg">Back to SURA</a></li>
+	        </ul>
+	      </div>
+	      <!--/.nav-collapse --> 
+	    </div>
+	  </div>
+	</div>
+
+	<!-- DB start -->
   <div id="labs">
     <input class="search" placeholder="Search" />
-    <button class="sort" data-sort="name">
-      Sort by name
-    </button>
+    <select class="form-control" id="filter-category">
+	    <option selected="selected" value="">Select lab category...</option>
+	    <option value="biology">Biology</option>
+	    <option value="chemistry">Chemistry</option>
+	    <option value="cs">Computer Science</option>
+	    <option value="earthsys">Earth Systems</option>
+	    <option value="econ">Economics</option>
+	    <option value="education">Education</option>
+	    <option value="math">Mathematics</option>
+	    <option value="physics">Physics</option>
+	    <option value="polisci">Political Science</option>
+	    <option value="pysch">Pyschology</option>
+		</select>
+    <!-- <button class="sort" data-sort="name">Sort by name</button> -->
   
-    <ul class="list"></ul>
+    <table>
+    <thead>
+      <tr>
+        <th><button class="sort" data-sort="name">Name</button></th>
+        <th><button class="sort" data-sort="pi">PI</button></th>
+        <th><button class="sort" data-sort="department">Department</button></th>
+        <th class="no-sort">Goals</th>
+        <th><button class="sort" data-sort="primary">Primary</button></th>
+        <th><button class="sort" data-sort="secondary">Secondary</button></th>
+        <th><button class="sort" data-sort="website">Website</button></th>
+        <th><button class="sort" data-sort="notes">Notes</button></th>
+      </tr>
+    </thead>
+    <!-- IMPORTANT, class="list" have to be at tbody -->
+    <tbody class="list">
+    	<tr>
+    		<td class="name"></td>
+    		<td class="pi"></td>
+    		<td class="department"></td>
+    		<td class="goals"><div></div></td>
+    		<td class="primary"></td>
+    		<td class="secondary"></td>
+    		<td class="website"></td>
+    		<td class="notes"></td>
+    		<td class="category" style="display:none;"></td>
+  		</tr>
+    </tbody>
+    <script src="assets/js/listscript.js"></script>
+    </table>
   
   </div>
-  <script src="assets/js/listscript.js"></script>
+  <!-- DB end -->
+
 </body>
 </html>

@@ -4,7 +4,6 @@
 
 #headerwrap {
   background: url(../img/header-bg.png) no-repeat center top;
-  padding-top: 150px;
   text-align: center;
   background-attachment: relative;
   background-position: center center;
@@ -18,7 +17,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-bottom: 100px;
+  padding: 40px 60px;
   margin-top: 70px;
 }
 #headerwrap h1 {
@@ -27,6 +26,7 @@
   font-weight: 400;
   text-align: center;
   letter-spacing: 2px;
+  padding-bottom: 20px;
 }
 #headerwrap h2 {
   color: #666;
@@ -35,7 +35,7 @@
   text-align: center;
 }
 #headerwrap p {
-  color: #666;
+  color: #080808;
   font-size: 22px;
   font-weight: 300;
   text-align: center;
@@ -44,9 +44,15 @@
 #headerwrap .btn {
   font-weight: 500;
   font-size: 17px;
-  margin: 20px 0;
+  margin: 10px 0;
   background-color: rgba(255,255,255,0);
   color: #555;
+  border: 1px solid #555;
+}
+#headerwrap .special-btn {
+  color: #fff;
+  background-color: #555;
+  outline: 0px;
   border: 1px solid #555;
 }
 #headerwrap .btn:hover, #headerwrap .btn:focus {
@@ -54,4 +60,11 @@
   background-color: #555;
   outline: 0px;
   border: 1px solid #555;
+}
+#about {
+  background: #fff;
+  padding: 50px 0;
+}
+#about img {
+  width: 100%;
 }

@@ -50,6 +50,12 @@
   color: #fff;
   border: 1px solid #fff;
 }
+#headerwrap .special-btn {
+  color: #555;
+  background-color: #fff;
+  outline: 0px;
+  border: 1px solid #fff;
+}
 #headerwrap .btn:hover, #headerwrap .btn:focus {
   color: #555;
   background-color: #fff;
@@ -190,8 +196,11 @@
 }
 #sponsors {
   background: #fff;
-  padding: 60px 0;
+  padding: 60px 0 0;
   text-align: center;
+}
+.sponsor-img{
+  width: 100%;
 }
 #contact {
   background: #fff;

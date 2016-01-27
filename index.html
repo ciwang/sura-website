@@ -39,13 +39,22 @@
         <a class="navbar-brand smoothScroll" href="#home"><span class="icon-sura"></span>SURA</a> </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
+          <!-- Navbar items start -->
           <li> <a href="#home" class="smoothScroll">Home</a></li>
-          <li> <a href="#about" class="smoothScroll">About</a></li>
-          <li> <a href="#initiatives" class="smoothScroll">Initiatives</a></li>
-          <li> <a href="#events" class="smoothScroll">Events</a></li>
-          <li> <a href="#team" class="smoothScroll">Team</a></li>
-          <li> <a href="#sponsors" class="smoothScroll">Sponsors</a></li>
-          <li> <a href="#contact" class="smoothScroll">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li> <a href="#about" class="smoothScroll">What is SURA?</a></li>
+              <li> <a href="#initiatives" class="smoothScroll">Initiatives</a></li>
+              <li> <a href="#events" class="smoothScroll">Events</a></li>
+              <li> <a href="#team" class="smoothScroll">Team</a></li>
+              <li> <a href="#sponsors" class="smoothScroll">Sponsors</a></li>
+              <li> <a href="#contact" class="smoothScroll">Contact</a></li>
+            </ul>
+          </li>
+          <li> <a href="conference">Conference</a></li>
+          <li> <a>|</a> </li>
+          <li> <a href="bootcamp">Bootcamp</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Treesearch <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -54,11 +63,11 @@
               <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
               </li>
               <li><a class="typeform-share link" href="https://suraboard.typeform.com/to/WrcjU4" data-mode="1" target="_blank">Post Opportunities</a>
-              <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
               </li>
             </ul>
-        </li>
+          </li>
           <li> <a href="https://mailman.stanford.edu/mailman/listinfo/sura_researchers1516" class="btn btn-lg">Join Our Mailing List</a></li>
+          <!-- Navbar items end -->
         </ul>
       </div>
       <!--/.nav-collapse --> 
@@ -72,7 +81,9 @@
     <h2>We are the</h2>
     <h1>Stanford Undergraduate Research Association</h1>
     <p>SURA is building and empowering the best collegiate researchers.</p>
-    <a href="#about" class="smoothScroll btn btn-lg">What We Do</a> </header>
+    <!-- <a href="#about" class="smoothScroll btn btn-lg">What We Do</a> </header> -->
+    <a href="conference" class="smoothScroll btn btn-lg special-btn">Learn More About SRC 2016</a>
+    <p><a href="https://www.facebook.com/SURAcardinal" target="_blank" class="smoothScroll btn btn-lg">SURA on Facebook</a> <a href="https://www.facebook.com/StanfordResearchConference" target="_blank" class="smoothScroll btn btn-lg">SRC on Facebook</a></p>
 </div>
 <!-- /headerwrap --> 
 
@@ -88,8 +99,10 @@
         <p>Follow us on <a href="https://www.facebook.com/SURAcardinal" target="_blank">Facebook</a> for important updates.
         </p>
         <h3>The Stanford Research Conference</h3>
-        <p>Held every spring, SURA’s annual conference serves as a forum where undergraduates from all over the Bay Area can present their work, connect with other researchers, and hear from distinguished leaders in the research community. Students who share their findings accordingly will receive valuable feedback from the students, alumni, and faculty members in attendance—feedback that will help them develop their interests further or redirect their efforts altogether. Students currently not participating in research may find a project that inspires them to explore an idea of their own. In this fashion, the symposium will facilitate the exchange of information that is necessary for intellectual advancement in today’s highly interconnected society.</p>
-        <p>SRC 2015 has passed, but photos from the events and updates on SRC 2016 can be found on the <a href="https://www.facebook.com/StanfordResearchConference" target="_blank">SRC Facebook page</a>.</p>
+        <p>Held every spring, SURA’s annual conference serves as a forum where undergraduates from all over the country can present their work, connect with other researchers, and hear from distinguished leaders in the research community. Students who share their findings accordingly will receive valuable feedback from the students, alumni, and faculty members in attendance—feedback that will help them develop their interests further or redirect their efforts altogether. Students currently not participating in research may find a project that inspires them to explore an idea of their own. In this fashion, the conference will facilitate the exchange of information that is necessary for intellectual advancement in today’s highly interconnected society.</p>
+        <p>SRC 2016 will be held on April 15-17, 2016 in Stanford, CA. To learn more and apply visit our <a href="conference" target="_blank">conference page</a>.</p>
+        <p>Applications are due February 18, 2016.</p>
+        <p>You can also visit the <a href="https://www.facebook.com/StanfordResearchConference" target="_blank">SRC Facebook page</a> to learn more about our event.</p>
       </div>
     </div>
     <!-- row --> 
@@ -353,7 +366,14 @@
     <div class="row">
       <h2 class="centered">Our Sponsors</h2>
       <hr>
-      <div class="col-md-12"><h3>Coming Soon!</h3></div>
+      <div class="col-md-3"><a class="img-responsive" href="http://www.stanford.edu/">
+<img class="sponsor-img" border="0" alt="Stanford University" src="assets/img/sponsors/stanford-logo.png"></div>
+      <div class="col-md-3"><a class="img-responsive" href="http://med.stanford.edu/">
+<img class="sponsor-img" border="0" alt="Stanford School of Medicine" src="assets/img/sponsors/stanford-med-logo.png"></div>
+      <div class="col-md-3"><a class="img-responsive" href="http://assu.stanford.edu/">
+<img class="sponsor-img" border="0" alt="Associated Students of Stanford University" src="assets/img/sponsors/assu-logo.png"></div>
+      <div class="col-md-3"><a href="https://undergrad.stanford.edu/">
+<img border="0" alt="Stanford Undergraduate Advising and Research" src="assets/img/sponsors/uar-logo.jpg" width="60%"></div>
     </div>
   </div>
 </div>

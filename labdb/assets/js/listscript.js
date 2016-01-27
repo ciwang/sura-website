@@ -1,10 +1,37 @@
+var dataFiles = ['biology.json', 'chemistry.json', 'cs.json', 
+	'earthsys.json', 'econ.json','education.json','math.json',
+	'physics.json','polisci.json','psych.json'];
+
 var options = {
-  valueNames: ['name', 'pi', 'department', 'goals', 'primary', 'secondary', 'website', 'notes'],
-  item: '<li><h3 class="name"></h3><p class="pi"></p><p class="department"></p><p class="goals"></p><p class="primary"></p><p class="secondary"></p><p class="website"></p><p class="notes"></p></li>'
+  valueNames: ['name', 'pi', 'department', 'goals', 'primary', 'secondary', 'website', 'notes', 'category']
 };
 
-var labsList;
+var labsList = new List('labs', options);
 
-$.getJSON( "assets/labdata/biology.json", function( data ) {
-  labsList = new List('labs', options, data);
+var currentFile = 0;
+
+$.getJSON( "assets/labdata/" + dataFiles[currentFile], getNextFile);
+
+function getNextFile(data) {
+  for (var i = 0; i < data.length; i++) {
+    data[i]['category'] = dataFiles[currentFile].split('.')[0]
+  }
+  labsList.add(data);
+  currentFile += 1;
+  console.log(currentFile);
+  console.log(data[0]);
+  if (currentFile != dataFiles.length) {
+    $.getJSON( "assets/labdata/" + dataFiles[currentFile], getNextFile);
+  }
+}
+
+$('#filter-category').change(function () {
+    var selection = this.value;
+    if (selection) {
+        labsList.filter(function(item) {
+          return (item.values().category == selection);
+        });
+    } else {
+        labsList.filter();
+    }
 });
