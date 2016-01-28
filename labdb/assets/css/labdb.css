@@ -1,3 +1,7 @@
+/*******
+ * Table
+ *******/
+
 #labs {
   padding: 110px 55px 0;
   width: 100%;
@@ -13,23 +17,26 @@ tbody {
 td {
   padding:10px;
   vertical-align: top;
-  max-width: 200px;
+  min-width: 100px;
 }
-.avatar {
-  max-width: 150px;
+#template {
+  display: none;
 }
-img {
-  max-width: 100%;
+.name {
+  font-weight: bold;
 }
-h3 {
-  font-size: 16px;
-  margin:0 0 0.3rem;
-  font-weight: normal;
-  font-weight:bold;
+.contact {
+  font-style: italic;
 }
-p {
-  margin:0;
+#loading_spinner {
+  font-size: 2em;
+  margin-top: 1em;
+  text-align: center;
 }
+
+/********************
+ * Search and Options
+ ********************/
 
 input {
   border:solid 1px #ccc;
@@ -49,6 +56,11 @@ select.form-control {
   font-size:inherit;
   height: 38px;
 }
+
+/*********
+ * Sorting
+ *********/
+
 .sort, .no-sort{
   padding:8px 20px;
   margin:1px;

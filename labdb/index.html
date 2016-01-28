@@ -12,13 +12,15 @@
 <!-- Custom CSS -->
 <link href="../assets/css/main.css" rel="stylesheet">
 <link href="assets/css/labdb.css" rel="stylesheet">
-<script src="assets/js/list.min.js"></script>
 <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
 <link href="../assets/css/animate-custom.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+<!-- Scripts -->
 <script src="../assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="../assets/js/modernizr.custom.js"></script>
+<script src="assets/js/list.min.js"></script>
+<script src="assets/js/sheetrock.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
@@ -54,9 +56,10 @@
 	    <option value="math">Mathematics</option>
 	    <option value="physics">Physics</option>
 	    <option value="polisci">Political Science</option>
-	    <option value="pysch">Pyschology</option>
+	    <option value="psych">Psychology</option>
 		</select>
-    <!-- <button class="sort" data-sort="name">Sort by name</button> -->
+
+    <p>Click on the table headers to sort.</p>
   
     <table>
     <thead>
@@ -64,32 +67,32 @@
         <th><button class="sort" data-sort="name">Name</button></th>
         <th><button class="sort" data-sort="pi">PI</button></th>
         <th><button class="sort" data-sort="department">Department</button></th>
-        <th class="no-sort">Goals</th>
-        <th><button class="sort" data-sort="primary">Primary</button></th>
-        <th><button class="sort" data-sort="secondary">Secondary</button></th>
+        <th class="no-sort">Description</th>
         <th><button class="sort" data-sort="website">Website</button></th>
-        <th><button class="sort" data-sort="notes">Notes</button></th>
       </tr>
     </thead>
     <!-- IMPORTANT, class="list" have to be at tbody -->
     <tbody class="list">
-    	<tr>
+    	<tr id="template">
     		<td class="name"></td>
-    		<td class="pi"></td>
+    		<td class="pi_name">
+          <p class="pi"></p>
+          <p><span class="contact">Contact:</span> <span class="primary"></span></p>
+          <p class="secondary"></p>
+        </td>
     		<td class="department"></td>
-    		<td class="goals"><div></div></td>
-    		<td class="primary"></td>
-    		<td class="secondary"></td>
-    		<td class="website"></td>
-    		<td class="notes"></td>
-    		<td class="category" style="display:none;"></td>
+    		<td class="goals"></td>	
+    		<td><a href="#" class="website"></a></td>
   		</tr>
     </tbody>
-    <script src="assets/js/listscript.js"></script>
+    
     </table>
-  
+    <div id="loading_spinner">
+      <i class="fa fa-refresh fa-spin"></i> Loading...
+    </div>
   </div>
   <!-- DB end -->
 
+<script src="assets/js/listscript.js"></script>
 </body>
 </html>
