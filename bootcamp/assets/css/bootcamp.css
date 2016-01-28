@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+  background: #fff;
+  padding: 100px 0 0 0;
+}
+#headerwrap p {
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+#headerwrap img {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul img {
+  float: left;
+  padding: 5px 10px 0 0;
+  opacity: 1;
+  margin: 0 0 10px 10;
+}
